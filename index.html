@@ -1,10 +1,117 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Assignment 02</title>
 </head>
+
 <body>
+    <header>
+        <nav class="flex align-center justify-between bg-dark px-5 py-4">
+            <img class="cursor-pointer" src="./assets/TechWave.png" alt="TechWave Logo">
+            <ul class="hidden sm:block">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Episodes</a></li>
+                <li><a href="#">Host</a></li>
+            </ul>
+            <button class="hidden sm:block">Subscribe<img src="./assets/ArrowRight.png" alt="Arrow Right"></button>
+            <button href="#" class="sm:hidden cursor-pointer"><img src="./assets/hamburger-menu.png" alt="Hamburger Menu Icon"></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-dark px-5 py-20 grid gap-6 justify-items-center bg-dark-800 bg-[url(./assets/hero-bg-mobile.png)] bg-cover bg-no-repeat">
+            <div class="relative px-[75px] py-[65px] bg-[url(./assets/hero-circle.png)] bg-cover bg-no-repeat">
+                <img class="h-[70px]" src="./assets/microphone.png" alt="An icon of a microphone">
+                <p class="absolute top-0 right-0 text-base font-semibold text-dark bg-green uppercase px-4 py-2 rounded-full shadow-[0px_3px_27px_0px_rgba(0,255,136,0.5)]">New</p>
+            </div>
+
+            <div class="max-w-100 text-center grid gap-2 text-white">
+                <h1 class="text-[2.5rem] font-extrabold">TechWave</h1>
+                <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+            </div>
+
+            <div class="flex gap-2">
+                <button href="#" class="flex gap-2 px-5 py-3 items-center rounded-full bg-linear-to-bl/oklch from-purple via-pink to-yellow text-white font-semibold"><img src="./assets/spotify-line.png" alt="An Icon Of Spotify">Listen On Spotify</button>
+                <button href="#" class="flex gap-2 px-5 py-3 items-center rounded-full text-green font-semibold border"><img src="./assets/message.png" alt="An Icon Of Message">Subscribe</button>
+            </div>
+        </section>
+
+        <section class="bg-dark px-5 py-10 grid gap-10">
+            <div class="text-white text-center grid gap-2">
+                <h2 class="font-bold text-[2rem]">About The Podcast</h2>
+                <p class="opacity-80">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders. <br><br>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+            </div>
+
+            <hr class="w-full border-white opacity-10">
+            
+            <dl class="grid grid-cols-2 sm:grid-cols-4 text-center gap-10">
+                <div class="flex flex-col-reverse">
+                    <dt class="text-white uppercase opacity-80">Monthly Listeners</dt>
+                    <dd class="text-[2.5rem] font-black text-green uppercase">150k+</dd>
+                </div>
+                <div class="flex flex-col-reverse">
+                    <dt class="text-white uppercase opacity-80">Episodes Published</dt>
+                    <dd class="text-[2.5rem] font-black text-green uppercase">200+</dd>
+                </div>
+                <div class="flex flex-col-reverse">
+                    <dt class="text-white uppercase opacity-80">Average Rating</dt>
+                    <dd class="text-[2.5rem] font-black text-green uppercase">4.9 &starf;</dd>
+                </div>
+                <div class="flex flex-col-reverse">
+                    <dt class="text-white uppercase opacity-80">Industry Experts</dt>
+                    <dd class="text-[2.5rem] font-black text-green uppercase">50+</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="bg-dark-800 px-5 py-10 grid gap-4">
+            <h2 class="text-white text-center text-[2rem] font-bold">Why Choose TechWave</h2>
+
+            <ul class="grid gap-4">
+                <li>
+                    <article class="bg-[rgba(53,17,101,0.4)] rounded-3xl p-6 grid gap-4 text-white">
+                        <img class="h-15" src="./assets/headphone.png" alt="">
+                        <h3 class="text-[1.375rem] font-bold">Premium Audio Quality</h3>
+                        <p class="opacity-60">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                    </article>
+                </li>
+                <li>
+                    <article class="bg-[rgba(53,17,101,0.4)] rounded-3xl p-6 grid gap-4 text-white">
+                        <img class="h-15" src="./assets/device.png" alt="">
+                        <h3 class="text-[1.375rem] font-bold">Mobile Friendly</h3>
+                        <p class="opacity-60">Listen on the go with seamless mobile experience and offline downloads.</p>
+                    </article>
+                </li>
+                <li>
+                    <article class="bg-[rgba(53,17,101,0.4)] rounded-3xl p-6 grid gap-4 text-white">
+                        <img class="h-15" src="./assets/location.png" alt="">
+                        <h3 class="text-[1.375rem] font-bold">Global Community</h3>
+                        <p class="opacity-60">Listen on the go with seamless mobile experience and offline downloads.</p>
+                    </article>
+                </li>
+                <li>
+                    <article class="bg-[rgba(53,17,101,0.4)] rounded-3xl p-6 grid gap-4 text-white">
+                        <img class="h-15" src="./assets/zap-fast.png" alt="">
+                        <h3 class="text-[1.375rem] font-bold">Exclusive Interviews</h3>
+                        <p class="opacity-60">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+                    </article>
+                </li>
+                <li>
+                    <article class="bg-[rgba(53,17,101,0.4)] rounded-3xl p-6 grid gap-4 text-white">
+                        <img class="h-15" src="./assets/resource.png" alt="">
+                        <h3 class="text-[1.375rem] font-bold">Rich Resources</h3>
+                        <p class="opacity-60">Access show notes, transcripts, and additional learning materials for every episode.</p>
+                    </article>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+
+    <footer></footer>
 </body>
+
 </html>
