@@ -1,10 +1,6 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-:root {
-    --default-font-family: var(--font-inter);
-}
-
 @theme {
     --breakpoint-sm: 36rem;
     --breakpoint-md: 62rem;
