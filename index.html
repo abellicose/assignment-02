@@ -8,8 +8,8 @@
 </head>
 
 <body>
-    <header>
-        <nav class="flex items-center justify-between bg-dark px-5 py-4">
+    <header class="bg-dark border border-[#412567]">
+        <nav class="flex items-center justify-between px-5 py-4 max-w-[1200px] mx-[auto]">
             <img class="cursor-pointer" src="./assets/TechWave.png" alt="TechWave Logo">
             <ul class="hidden sm:flex gap-8 text-white font-medium opacity-90">
                 <li><a href="#">About</a></li>
@@ -22,11 +22,13 @@
     </header>
 
     <main>
-        <section class="bg-dark px-5 py-10 grid gap-6 justify-items-center bg-dark-800 bg-[url(./assets/hero-bg.png)] bg-cover bg-center bg-no-repeat">
-            <div class="relative px-[75px] py-[65px] bg-[url(./assets/hero-circle.png)] bg-cover bg-no-repeat">
-                <img class="h-[70px]" src="./assets/microphone.png" alt="An icon of a microphone">
-                <p class="absolute top-0 right-0 text-base font-semibold text-dark bg-green uppercase px-4 py-2 rounded-full shadow-[0px_3px_27px_0px_rgba(0,255,136,0.5)]">New</p>
+        <section class="bg-dark px-5 py-10 md:py-25 grid gap-6 sm:gap-8 md:gap-10 justify-items-center bg-dark-800 bg-[url(./assets/hero-bg.png)] bg-cover bg-center bg-no-repeat">
+            <div class="relative px-[75px] py-[65px] md:px-[116px] md:pt-[77px] md:pb-[97px] bg-[url(./assets/hero-circle.png)] bg-cover bg-no-repeat">
+                <img class="h-[70px] md:h-[175px]" src="./assets/microphone.png" alt="An icon of a microphone">
+                <p class="absolute top-0 right-0 text-base font-semibold text-dark bg-green uppercase px-4 py-2 rounded-full shadow-[0px_3px_27px_0px_rgba(0,255,136,0.5)] md:top-3 md:right-6">New</p>
             </div>
+            
+            <div class="grid gap-6">
 
             <div class="max-w-100 text-center grid gap-2 text-white">
                 <h1 class="text-[2.5rem] font-extrabold sm:text-5xl md:text-6xl">TechWave</h1>
@@ -36,6 +38,8 @@
             <div class="flex gap-2">
                 <button href="#" class="flex gap-2 px-5 py-3 items-center rounded-full bg-linear-to-bl/oklch from-purple via-pink to-yellow text-white font-semibold cursor-pointer"><img src="./assets/spotify-line.png" alt="An Icon Of Spotify">Listen On Spotify</button>
                 <button href="#" class="flex gap-2 px-5 py-3 items-center rounded-full text-green font-semibold border cursor-pointer"><img src="./assets/message.png" alt="An Icon Of Message">Subscribe</button>
+            </div>
+
             </div>
         </section>
 
@@ -71,10 +75,12 @@
             </div>
         </section>
 
-        <section class="bg-dark-800 px-5 py-10 sm:py-20 md:py-30 grid gap-4 sm:gap-8 md:gap-10">
+        <section class="bg-dark-800">
+            <div class="container px-5 py-10 sm:py-20 md:py-30 grid gap-4 sm:gap-8 md:gap-10 max-w-[1200px] mx-[auto]">
+
             <h2 class="text-white text-center text-[2rem] sm:text-[2.5rem] md:text-5xl font-bold">Why Choose TechWave</h2>
 
-            <ul class="grid gap-4 md:grid-rows-3 md:grid-cols-3">
+            <ul class="grid gap-4 md:grid-rows-[1fr_1fr_1.21fr] md:grid-cols-3">
                 <li class="md:row-span-2 bg-[rgba(53,17,101,0.4)] rounded-3xl p-6 md:p-10 grid content-center">
                     <article class="grid gap-4 text-white">
                         <img class="h-15" src="./assets/headphone.png" alt="">
@@ -111,6 +117,8 @@
                     </article>
                 </li>
             </ul>
+
+            </div>
         </section>
 
         <section class="bg-dark">
@@ -118,7 +126,7 @@
 
             <h2 class="text-white text-center text-[2rem] sm:text-[2.5rem] md:text-5xl font-bold">Featured Episodes</h2>
 
-            <ul class="grid gap-4 md:grid-cols-3 md:gap-[30px]">
+            <ul class="grid gap-4 md:grid-cols-3 md:gap-[30px] [&_>:hover]:-translate-y-3 [&_>]:transition [&_>]:duration-300">
                 <li>
                     <article class="bg-dark-800 rounded-3xl overflow-hidden">
                         <figure>
@@ -159,16 +167,16 @@
             </div>
         </section>
         
-        <section class="bg-dark text-white text-center px-5 pt-5 pb-10">
+        <section class="bg-dark text-white text-center px-5 pt-5 pb-10 md:pb-30">
             <!-- content container div -->
             <div>
-                <h2 class="text-[2rem] font-bold mb-6">Meet The Host</h2>
+                <h2 class="text-[2rem] font-bold mb-6 md:mb-10 sm:text-[2.5rem] md:text-5xl">Meet The Host</h2>
                 
-                <article class="grid gap-6 bg-dark-800 p-6 rounded-3xl">
-                    <figure class="grid justify-items-center">
+                <article class="flex flex-col md:flex-row gap-6 bg-dark-800 p-6 md:p-10 rounded-3xl max-w-[1200px] mx-[auto]">
+                    <figure class="shrink-0" class="grid w-fit justify-items-center">
                         <img src="./assets/host.png" alt="Alex Kumar">
                     </figure>
-                    <div class="grid gap-6 justify-items-center">
+                    <div class="grid gap-6 justify-items-center md:justify-items-start md:text-left ">
                     <h3 class="text-2xl font-bold">Alex Kumar</h3>
                     <p class="opacity-60">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
                     <ul class="flex gap-2">
@@ -191,12 +199,12 @@
         </section>
     </main>
 
-    <footer class="bg-dark-800 bg-[url(./assets/footer-bg.png)] bg-cover bg-center bg-no-repeat px-5 py-10 text-[#FFFFFF99]">
-        <div class="grid gap-6 justify-items-center">
+    <footer class="bg-dark-800 bg-[url(./assets/footer-bg.png)] bg-cover bg-center bg-no-repeat px-5 py-10 sm:py-20 md:py-30 text-[#FFFFFF99]">
+        <div class="grid gap-6 md:gap-8 justify-items-center">
         <figure>
-            <img class="w-[220px]" src="./assets/TechWave.png" alt="TechWave Logo">
+            <img class="w-[220px] md:w-[410px]" src="./assets/techwave-footer.png" alt="TechWave Logo">
         </figure>
-        <ul class="flex flex-wrap max-w-[255px] sm:max-w-full gap-4 justify-center">
+        <ul class="flex flex-wrap max-w-[255px] sm:max-w-full gap-4 sm:gap-8 md:gap-10 justify-center">
             <li>
                 <a class="flex gap-2 items-center font-medium"><img src="./assets/spotify.png">Spotify</a>
             </li>
