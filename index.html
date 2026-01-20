@@ -23,9 +23,9 @@
 
     <main>
         <section class="bg-dark px-5 py-10 md:py-25 grid gap-6 sm:gap-8 md:gap-10 justify-items-center bg-dark-800 bg-[url(./assets/hero-bg.png)] bg-cover bg-center bg-no-repeat">
-            <div class="relative px-[75px] py-[65px] md:px-[116px] md:pt-[77px] md:pb-[97px] bg-[url(./assets/hero-circle.png)] bg-cover bg-no-repeat">
+            <div class="relative px-[75px] py-[65px] md:px-[116px] md:pt-[77px] md:pb-[97px] bg-[url(./assets/hero-circle.png)] bg-cover bg-no-repeat [&:hover_.text-new]:-translate-y-2">
                 <img class="h-[70px] md:h-[175px]" src="./assets/microphone.png" alt="An icon of a microphone">
-                <p class="absolute top-0 right-0 text-base font-semibold text-dark bg-green uppercase px-4 py-2 rounded-full shadow-[0px_3px_27px_0px_rgba(0,255,136,0.5)] md:top-3 md:right-6">New</p>
+                <p class="text-new absolute top-0 right-0 text-base font-semibold text-dark bg-green uppercase px-4 py-2 rounded-full shadow-[0px_3px_27px_0px_rgba(0,255,136,0.5)] md:top-3 md:right-6 transition duration-300">New</p>
             </div>
             
             <div class="grid gap-6">
@@ -53,7 +53,7 @@
 
             <hr class="w-full border-white opacity-10">
             
-            <dl class="flex flex-wrap sm:flex-nowrap text-center gap-10 justify-around sm:justify-between items-center content-center">
+            <dl class="grid grid-cols-2 sm:flex sm:flex-nowrap text-center gap-10 justify-around sm:justify-between items-center content-center">
                 <div class="flex flex-col-reverse">
                     <dt class="text-white uppercase opacity-80">Monthly Listeners</dt>
                     <dd class="text-[2.5rem] md:text-5xl font-black text-green uppercase">150k+</dd>
@@ -80,7 +80,7 @@
 
             <h2 class="text-white text-center text-[2rem] sm:text-[2.5rem] md:text-5xl font-bold">Why Choose TechWave</h2>
 
-            <ul class="grid gap-4 md:grid-rows-[1fr_1fr_1.21fr] md:grid-cols-3">
+            <ul class="grid gap-4 md:grid-rows-[1fr_1fr_1.21fr] md:grid-cols-3 [&>*:hover]:shadow-[0_0_30px_#351165_inset] [&>*]:transition [&>*]:duration-100">
                 <li class="md:row-span-2 bg-[rgba(53,17,101,0.4)] rounded-3xl p-6 md:p-10 grid content-center">
                     <article class="grid gap-4 text-white">
                         <img class="h-15" src="./assets/headphone.png" alt="">
@@ -126,7 +126,7 @@
 
             <h2 class="text-white text-center text-[2rem] sm:text-[2.5rem] md:text-5xl font-bold">Featured Episodes</h2>
 
-            <ul class="grid gap-4 md:grid-cols-3 md:gap-[30px] [&_>:hover]:-translate-y-3 [&_>]:transition [&_>]:duration-300">
+            <ul class="grid gap-4 md:grid-cols-3 md:gap-[30px] md:[&>*:hover]:-translate-y-3 md:[&>*]:transition md:[&>*]:duration-300">
                 <li>
                     <article class="bg-dark-800 rounded-3xl overflow-hidden">
                         <figure>
@@ -181,16 +181,16 @@
                     <p class="opacity-60">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
                     <ul class="flex gap-2">
                         <li>
-                            <a class="hover:bg-[#533c72] w-10 h-10 grid place-items-center border border-[#533c72] rounded-full" href="#"><img src="./assets/linkedin.png" alt="Alex Kumar on LinkedIn"></a>
+                            <a class="hover:bg-[#533c72] w-10 h-10 grid place-items-center border border-[#533c72] rounded-full transition duration-100" href="#"><img src="./assets/linkedin.png" alt="Alex Kumar on LinkedIn"></a>
                         </li>
                         <li>
-                            <a class="hover:bg-[#533c72] w-10 h-10 grid place-items-center border border-[#533c72] rounded-full" href="#"><img src="./assets/x.png" alt="Alex Kumar on X"></a>
+                            <a class="hover:bg-[#533c72] w-10 h-10 grid place-items-center border border-[#533c72] rounded-full transition duration-100" href="#"><img src="./assets/x.png" alt="Alex Kumar on X"></a>
                         </li>
                         <li>
-                            <a class="hover:bg-[#533c72] w-10 h-10 grid place-items-center border border-[#533c72] rounded-full" href="#"><img src="./assets/instagram.png" alt="Alex Kumar on instagram"></a>
+                            <a class="hover:bg-[#533c72] w-10 h-10 grid place-items-center border border-[#533c72] rounded-full transition duration-100" href="#"><img src="./assets/instagram.png" alt="Alex Kumar on instagram"></a>
                         </li>
                         <li>
-                            <a class="hover:bg-[#533c72] w-10 h-10 grid place-items-center border border-[#533c72] rounded-full" href="#"><img src="./assets/youtube.png" alt="Alex Kumar on youtube"></a>
+                            <a class="hover:bg-[#533c72] w-10 h-10 grid place-items-center border border-[#533c72] rounded-full transition duration-100" href="#"><img src="./assets/youtube.png" alt="Alex Kumar on youtube"></a>
                         </li>
                     </ul>
                     </div>

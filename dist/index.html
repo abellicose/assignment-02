@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 02</title>
+    <link rel="stylesheet" crossorigin href="./assets/index-DvVB14BK.css">
+</head>
+
+<body>
+    <header class="bg-dark border border-[#412567]">
+        <nav class="flex items-center justify-between px-5 py-4 max-w-[1200px] mx-[auto]">
+            <img class="cursor-pointer" src="./assets/TechWave-7EbI7ZMv.png" alt="TechWave Logo">
+            <ul class="hidden sm:flex gap-8 text-white font-medium opacity-90">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Episodes</a></li>
+                <li><a href="#">Host</a></li>
+            </ul>
+            <button class="hidden sm:flex gap-2 px-5 py-3 items-center rounded-full bg-linear-to-bl/oklch from-purple via-pink to-yellow text-white font-semibold cursor-pointer" >Subscribe<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABfElEQVR4Ae3gAZAkSZIkSRKLqpm7R0REZmZmVlVVVVV3d3d3d/fMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMdHd3d3dXV1VVVVVmZkZGRIS7m5kKz0xmV3d1d3dPz8zMzMxMoviPhfiPhfiPhfhXsP1gSbfygiFeRLbfGvgp4H0kfTfPH+JfwfZnA58FvI+k7+Z5If6VbH828FnA+0j6bp4T4t/A9mcDnwW8j6Tv5tkQ/0a2Pxv4LOB9JH03VyCeyfZLAx/Fv85bA8eBt5H00wDimWy/NPBR/Ou8NXAceB1Jvw0g/o1sfzbwWcD7SPpurkD8G9j+bOCzgPeR9N08G+JfyfZnA58FvI+k7+Y5If4VbH828FnA+0j6bp4X4kVk+6WBvwLeR9J38/whXkS2jwNI2uUFQ/zHQvzHQvzH4h8BTN1EFeutW9UAAAAASUVORK5CYII=" alt="Arrow Right"></button>
+            <button href="#" class="sm:hidden cursor-pointer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAYAAAAi2ky3AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAySURBVHgB7dExEQAgDATBeydIw3lw8uCAAopkJivgmpPtAAZvlk5ofggF7Up9raB81za+vhuvJMvNywAAAABJRU5ErkJggg==" alt="Hamburger Menu Icon"></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-dark px-5 py-10 md:py-25 grid gap-6 sm:gap-8 md:gap-10 justify-items-center bg-dark-800 bg-[url(./assets/hero-bg.png)] bg-cover bg-center bg-no-repeat">
+            <div class="relative px-[75px] py-[65px] md:px-[116px] md:pt-[77px] md:pb-[97px] bg-[url(./assets/hero-circle.png)] bg-cover bg-no-repeat [&:hover_.text-new]:-translate-y-2">
+                <img class="h-[70px] md:h-[175px]" src="data:image/png;base64,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" alt="An icon of a microphone">
+                <p class="text-new absolute top-0 right-0 text-base font-semibold text-dark bg-green uppercase px-4 py-2 rounded-full shadow-[0px_3px_27px_0px_rgba(0,255,136,0.5)] md:top-3 md:right-6 transition duration-300">New</p>
+            </div>
+            
+            <div class="grid gap-6">
+
+            <div class="max-w-100 text-center grid gap-2 text-white">
+                <h1 class="text-[2.5rem] font-extrabold sm:text-5xl md:text-6xl">TechWave</h1>
+                <p class="opacity-60">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+            </div>
+
+            <div class="flex gap-2">
+                <button href="#" class="flex gap-2 px-5 py-3 items-center rounded-full bg-linear-to-bl/oklch from-purple via-pink to-yellow text-white font-semibold cursor-pointer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAC+0lEQVR4Ae3gAZAkSZIkSRKLqpm7R0REZmZmVlVVVVV3d3d3d/fMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMdHd3d3dXV1VVVVVmZkZGRIS7m5kKz0xmV3d1d3dPz8zMzMxMongR2D4uaZd/GeIFsP3ewHsBLw0c54pd4LeBn5H03TwvxHOx/dLATwEPBm4Ffhq4FTgBHAPeGngwcCvwNpL+mmdDPIDt9wa+CtgF3kfSb/N82H5v4LOABwPvI+m7uQLxTLZfGvgr4K+B15G0ywth+8HATwEPBl5H0l8DiGey/XSueB1Jt/IisH0c+CsASQ8BEIDt9wa+C3gfSd9t+6WB9wLeGngwV+wCfw3cCnyPpN8GsP3awG8B7yPpuwVg+6eAl5b0EADbvwW8NPDXwO9wxTHgpYEHAw8Gfht4H0m32n46cKuk1xGA7YvAd0v6GADbxwEk7dp+MICkW3km2+8NfBbw05I+xvZXAe8t6YQAbBv4HEmfDWD7wcB3Aa/Nc/pr4LeBr5F0K89k+6OArwZOyPZx4CLw0ZK+BsD2WwMfBdwK/DWwCzwEeCngrbnifSR9N4DtzwY+S5IEYPsi8N2SPoYHsH0ceDBwHNiV9Ne2Hwy8N/DTkv4awPZXAe8t6YQAbP8W8GBJD+GZbL838F08p1uB3wY+RtIuz2T76cBfS3obAdh+b+C7gNeR9NsAth8MvDfwdOAS8CDgrYHXBl5H0m8D2H5v4LuA95H03eKZbD+dK15G0i4vAtsPBn4LQNJDAMQz2X5p4LeAW4G3kXQrL4Tt48BvAS8NvIykvwYQD2D7vYHvAm4FPkfSd/N82H5t4LuA48DHSPpurkA8F9svDfwU8GDgVuCngUvAReDBwFsDDwZuBd5G0l/zbIgXwPZ7A28FvDZwnCt2gb8GvkfSd/O8EC8i28cl7fLC8Y/zYfUiEM6rIwAAAABJRU5ErkJggg==" alt="An Icon Of Spotify">Listen On Spotify</button>
+                <button href="#" class="flex gap-2 px-5 py-3 items-center rounded-full text-green font-semibold border cursor-pointer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAYAAAAi2ky3AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEXSURBVHgBpZPBccIwEEX/Ki4g6YASoIKYCkIHkA7CJTPkRC4JySXpIE4FSQdAB9CBS/ARZoDlSwiD0TAI+DM7Hq3kp7+7tkAHQwAprpJ0Ew8puHgEVhOcJfMFaIvxkPjMNxc/wE0T8hwH0wHPa53xShP3xmd/GV06GkI/63EQW4k2+cydt3JTelkUbB8ivXybNpVDFdhbKxYSgiow8wf9aMdArJLw1vcam86GLzlFZITZZFpCXIMRgEwIEX5Xi453RphmO8i8cCPfuDsC0v7tBqJjyMvTrszZHaPhypF+4SeVHsKECSWvwVLsxpQvdHBKpXOM3MWQtgfZmq2TCEgIs8pts2kXTJrC/3fnquZByrJcM3G55v9rFVKDLaCF0IgAAAAASUVORK5CYII=" alt="An Icon Of Message">Subscribe</button>
+            </div>
+
+            </div>
+        </section>
+
+        <section class="bg-dark">
+            <div class="container max-w-[1200px] mx-[auto] px-5 py-10 sm:pt-[50px] sm:pb-20 md:pb-30 grid gap-10 sm:gap-15 md:gap-20">
+
+            <div class="text-white text-center grid gap-2 sm:gap-3 md:gap-4">
+                <h2 class="font-bold text-[2rem] sm:text-[2.5rem] md:text-5xl">About The Podcast</h2>
+                <p class="opacity-80">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.<br class="hidden sm:block"> We break down complex topics into digestible insights, explore productivity strategies that actually work,<br class="hidden sm:block"> and share stories of personal growth from industry leaders. <br><br>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+            </div>
+
+            <hr class="w-full border-white opacity-10">
+            
+            <dl class="grid grid-cols-2 sm:flex sm:flex-nowrap text-center gap-10 justify-around sm:justify-between items-center content-center">
+                <div class="flex flex-col-reverse">
+                    <dt class="text-white uppercase opacity-80">Monthly Listeners</dt>
+                    <dd class="text-[2.5rem] md:text-5xl font-black text-green uppercase">150k+</dd>
+                </div>
+                <div class="flex flex-col-reverse">
+                    <dt class="text-white uppercase opacity-80">Episodes Published</dt>
+                    <dd class="text-[2.5rem] md:text-5xl font-black text-green uppercase">200+</dd>
+                </div>
+                <div class="flex flex-col-reverse">
+                    <dt class="text-white uppercase opacity-80">Average Rating</dt>
+                    <dd class="text-[2.5rem] md:text-5xl font-black text-green uppercase">4.9&starf;</dd>
+                </div>
+                <div class="flex flex-col-reverse">
+                    <dt class="text-white uppercase opacity-80">Industry Experts</dt>
+                    <dd class="text-[2.5rem] md:text-5xl font-black text-green uppercase">50+</dd>
+                </div>
+            </dl>
+
+            </div>
+        </section>
+
+        <section class="bg-dark-800">
+            <div class="container px-5 py-10 sm:py-20 md:py-30 grid gap-4 sm:gap-8 md:gap-10 max-w-[1200px] mx-[auto]">
+
+            <h2 class="text-white text-center text-[2rem] sm:text-[2.5rem] md:text-5xl font-bold">Why Choose TechWave</h2>
+
+            <ul class="grid gap-4 md:grid-rows-[1fr_1fr_1.21fr] md:grid-cols-3 [&>*:hover]:shadow-[0_0_30px_#351165_inset] [&>*]:transition [&>*]:duration-100">
+                <li class="md:row-span-2 bg-[rgba(53,17,101,0.4)] rounded-3xl p-6 md:p-10 grid content-center">
+                    <article class="grid gap-4 text-white">
+                        <img class="h-15" src="data:image/png;base64,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" alt="">
+                        <h3 class="text-[1.375rem] font-bold">Premium Audio Quality</h3>
+                        <p class="opacity-60">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                    </article>
+                </li>
+                <li class="md:col-span-2 bg-[rgba(53,17,101,0.4)] rounded-3xl p-6 md:p-10 grid content-center">
+                    <article class="grid gap-4 text-white">
+                        <img class="h-15" src="data:image/png;base64,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" alt="">
+                        <h3 class="text-[1.375rem] font-bold">Mobile Friendly</h3>
+                        <p class="opacity-60">Listen on the go with seamless mobile experience and offline downloads.</p>
+                    </article>
+                </li>
+                <li class="md:col-span-2 bg-[rgba(53,17,101,0.4)] rounded-3xl p-6 md:p-10 grid content-center">
+                    <article class="grid gap-4 text-white">
+                        <img class="h-15" src="./assets/location-CKeaSTtO.png" alt="">
+                        <h3 class="text-[1.375rem] font-bold">Global Community</h3>
+                        <p class="opacity-60">Listen on the go with seamless mobile experience and offline downloads.</p>
+                    </article>
+                </li>
+                <li class="md:col-span-2 bg-[rgba(53,17,101,0.4)] rounded-3xl p-6 md:p-10 grid content-center">
+                    <article class="grid gap-4 text-white">
+                        <img class="h-15" src="data:image/png;base64,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" alt="">
+                        <h3 class="text-[1.375rem] font-bold">Exclusive Interviews</h3>
+                        <p class="opacity-60">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+                    </article>
+                </li>
+                <li class="bg-[rgba(53,17,101,0.4)] rounded-3xl p-6 md:p-10 grid content-center">
+                    <article class="grid gap-4 text-white">
+                        <img class="h-15" src="data:image/png;base64,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" alt="">
+                        <h3 class="text-[1.375rem] font-bold">Rich Resources</h3>
+                        <p class="opacity-60">Access show notes, transcripts, and additional learning materials for every episode.</p>
+                    </article>
+                </li>
+            </ul>
+
+            </div>
+        </section>
+
+        <section class="bg-dark">
+            <div class="max-w-[1200px] mx-[auto] px-5 py-10 sm:py-20 md:py-30 grid gap-6 sm:gap-8 md:gap-10">
+
+            <h2 class="text-white text-center text-[2rem] sm:text-[2.5rem] md:text-5xl font-bold">Featured Episodes</h2>
+
+            <ul class="grid gap-4 md:grid-cols-3 md:gap-[30px] md:[&>*:hover]:-translate-y-3 md:[&>*]:transition md:[&>*]:duration-300">
+                <li>
+                    <article class="bg-dark-800 rounded-3xl overflow-hidden">
+                        <figure>
+                            <iframe class="w-full aspect-video" src="https://www.youtube-nocookie.com/embed/oX7OduG1YmI?si=KP9cIeZaHsCmf3Sd&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </figure>
+                        <div class="text-white p-4 md:p-6 grid gap-2">
+                        <h3 class="text-xl font-bold line-clamp-2">The Future Mark Zuckerberg Is Trying To Build</h3>
+                        <p class="line-clamp-3 opacity-60">We talked about the Meta's new Orion prototype AR glasses, creating holograms and the Star Trek universal translator, generative AI changing social media, big trends in human connection, open sourced AI, Ray Ban Meta glasses and Quest 3S, the biggest genuine question on his mind right now, and more...</p>
+                        <time class="flex items-center gap-[6px] text-green font-semibold" datetime="PT47M09S"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEqSURBVHgBpVPLUcMwEH0rOHCkBHeAUwGmAoYKSAfcyOSEOAU4QQU4HaQDTAWYDlyCc4McrDytncTORJOP34w8kuft0672rWAbzl4CFw/cJVwxF88ouXJAUshouh0iXYE3Ble2CQyhAMwd5DFf/TAbgZcnCrzvEfCIyPuBe73vZqICsDgOLNENIOPCwE2igEDBRAck5gERZiyffuPLGQZIWVP3L8JImERCEblGL5jYoG5lD7ir8wNYKYlZ60wbSNwmeBFvpF1tjfQr46x78SRBbcIG1VzY3i/0KkmGfBM3RS9U34bpplBPnCTwUZtNwVk4HgWwsBqtRzWVeKHycAF3A7HlRkSFRjOdBe/UMPy8PAN/OjPr0J1UnaezW9bctLKak8ps/2er29tYAgf1VKlTEaEZAAAAAElFTkSuQmCC">47 min</time>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="bg-dark-800 rounded-3xl overflow-hidden">
+                        <figure>
+                            <iframe class="w-full aspect-video" src="https://www.youtube-nocookie.com/embed/7ARBJQn6QkM?si=-Yg_Nc7CDeU6RQpE&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </figure>
+                        <div class="text-white p-4 grid gap-2 md:p-6">
+                        <h3 class="text-xl font-bold line-clamp-2">NVIDIA CEO Jensen Huang's Vision for the Future</h3>
+                        <p class="line-clamp-3 opacity-60">A huge amount of the most futuristic tech you're hearing about - in AI, robotics, gaming, self-driving cars, breakthrough medical research - relies on new chips and software designed by him and his company.</p>
+                        <time class="flex items-center gap-[6px] text-green font-semibold" datetime="PT1H3M03S"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEqSURBVHgBpVPLUcMwEH0rOHCkBHeAUwGmAoYKSAfcyOSEOAU4QQU4HaQDTAWYDlyCc4McrDytncTORJOP34w8kuft0672rWAbzl4CFw/cJVwxF88ouXJAUshouh0iXYE3Ble2CQyhAMwd5DFf/TAbgZcnCrzvEfCIyPuBe73vZqICsDgOLNENIOPCwE2igEDBRAck5gERZiyffuPLGQZIWVP3L8JImERCEblGL5jYoG5lD7ir8wNYKYlZ60wbSNwmeBFvpF1tjfQr46x78SRBbcIG1VzY3i/0KkmGfBM3RS9U34bpplBPnCTwUZtNwVk4HgWwsBqtRzWVeKHycAF3A7HlRkSFRjOdBe/UMPy8PAN/OjPr0J1UnaezW9bctLKak8ps/2er29tYAgf1VKlTEaEZAAAAAElFTkSuQmCC">1 hour 47 min</time>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="bg-dark-800 rounded-3xl overflow-hidden">
+                        <figure>
+                            <iframe class="w-full aspect-video" src="https://www.youtube-nocookie.com/embed/hmtuvNfytjM?si=qx2Ri-y-kZk0W150&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </figure>
+                        <div class="text-white p-4 grid gap-2 md:p-6">
+                        <h3 class="text-xl font-bold line-clamp-2">Sam Altman Shows Me GPT 5... And What's Next</h3>
+                        <p class="line-clamp-3 opacity-60">I interviewed Sam Altman, the CEO of OpenAI, the company behind ChatGPT. They're trying to build a "superintelligence" that could far exceed humans in almost every field - and they just released their most powerful tool yet, GPT-5.</p>
+                        <time class="flex items-center gap-[6px] text-green font-semibold" datetime="PT1H5M06S"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEqSURBVHgBpVPLUcMwEH0rOHCkBHeAUwGmAoYKSAfcyOSEOAU4QQU4HaQDTAWYDlyCc4McrDytncTORJOP34w8kuft0672rWAbzl4CFw/cJVwxF88ouXJAUshouh0iXYE3Ble2CQyhAMwd5DFf/TAbgZcnCrzvEfCIyPuBe73vZqICsDgOLNENIOPCwE2igEDBRAck5gERZiyffuPLGQZIWVP3L8JImERCEblGL5jYoG5lD7ir8wNYKYlZ60wbSNwmeBFvpF1tjfQr46x78SRBbcIG1VzY3i/0KkmGfBM3RS9U34bpplBPnCTwUZtNwVk4HgWwsBqtRzWVeKHycAF3A7HlRkSFRjOdBe/UMPy8PAN/OjPr0J1UnaezW9bctLKak8ps/2er29tYAgf1VKlTEaEZAAAAAElFTkSuQmCC">1 hour 5 minute</time>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+            </div>
+        </section>
+        
+        <section class="bg-dark text-white text-center px-5 pt-5 pb-10 md:pb-30">
+            <!-- content container div -->
+            <div>
+                <h2 class="text-[2rem] font-bold mb-6 md:mb-10 sm:text-[2.5rem] md:text-5xl">Meet The Host</h2>
+                
+                <article class="flex flex-col md:flex-row gap-6 bg-dark-800 p-6 md:p-10 rounded-3xl max-w-[1200px] mx-[auto]">
+                    <figure class="shrink-0" class="grid w-fit justify-items-center">
+                        <img src="./assets/host-BpVzCIqs.png" alt="Alex Kumar">
+                    </figure>
+                    <div class="grid gap-6 justify-items-center md:justify-items-start md:text-left ">
+                    <h3 class="text-2xl font-bold">Alex Kumar</h3>
+                    <p class="opacity-60">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+                    <ul class="flex gap-2">
+                        <li>
+                            <a class="hover:bg-[#533c72] w-10 h-10 grid place-items-center border border-[#533c72] rounded-full transition duration-100" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH/SURBVHgBnZK/bhNBEMa/2d374xiTAxIT0eA3ANFR4ZKOvAGhTBU3lAjeAESN5LwAAoREhYRLSruhxSUSwrHw+f7fTmbPVqK4c0Z3p73d2W9+8+2iPPj4Om9/m82D759+Rz8ibBmKu4s3qpNEgS4O7yTVE2wZCrfTEfaWMJ107ql4gutE9fjDIfeGW+O7oOLlq6P6Twj9twNv7o3o5/F0EX7t59jpJfCQV940rsJxbG6c/GfvYWLDKKHgc2Lx5Ri3poZvpkOVaaDIUQIvRPQ0COvnKi+PLCtYrUa+sr3AFvdbBLKkUEP1LfknQz57ZHg/BjGBWXACyw5L5sg/k+GyoewzaxYtsm5ZkSS4F70UemDQTVwnLEHWr6nZspc6e9lnIhaRSuN9xnhnWPVbjLcg2nWCbP1nBvtLsAXBEnTIDQHuLsDGNsOAeXxv9nSw9ux04k0eELIBw9EgEoJ4tUmq1UG5JkjAikkeRz/G7NL1FvKJIuu2u9ZZTMwg1YkcQWtFYIVKays/RDA18OtSIEQGZ6OzQQZk3Ae7mZhIqP2qIVDdhKUFchWg+cq57+gSHrv2nJEM08y6pChltOo1QUzK1OzyyLsq0BaCkjzBV+w0zMWKFoR2sfLAGattYyyZjasXLREsQ3ApgLDYXF6F3A0Y20BuZugDOdd5jfCfiJfM51Ob7YmgsCxiAAAAAElFTkSuQmCC" alt="Alex Kumar on LinkedIn"></a>
+                        </li>
+                        <li>
+                            <a class="hover:bg-[#533c72] w-10 h-10 grid place-items-center border border-[#533c72] rounded-full transition duration-100" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJzSURBVHgBjVI9bxNBEJ3Z2/P6zqfkSBGChGSHDgmJuIgobUNDh50CCRriXxBbdDRx6JAAJ7/AINEhYVMg0TnpEAXnCCQKipgmISFyHHz2fez5hnOkRMaA4BUr7dt5s2/fDsqZenXoipV+KHAQCrJBoI+8dNVLb8AEqkAmQ88CghQBWy9BrMz4VHdNMQYtnbmgoyxr4D8TFKx/Ut8vTDYQMKghYJIANkfiEcewXewGulzi007XUOws+X5ZQ9niCHXLtMxT8Uu2t5pA/xanYZtAFE55Nlq09p12YHhlNu3lL0z1lmPoFSInpuHI2uh8i3+JxF5FQ++rBt71MmD3tAGOW5SXX1TpSJTQ5rnDwExJUmsOxRo2aXmbRLcTqOkCzLfHNTj5TnnluUUdzVQHam7fmSr5EAVMAuyQ5xaD9OZkPZ8kAiMscOZ8CDpUE8AKiuNnoluS8cBuwR/AJgntXbENur8EM27GMA9X+CgP9JALXv+vBie4dJShWRtoql8xLh6mFCUo6iAzu2Kr9M8G/qP79yLxKp3vH8PMoEX68JU5u9sSIDcEDqt78WZ2vP6XEO03dxf4N8PCfQOU70Ze7pzbZj9Ekx1pXdUqpgfaW8sl1TyOs/R8N3fylWchOjs3U3DQr0MYzRqjEn/w9PUJn68Wo31TLtaqwUenEGehBW5slEfuzIGzl00RUpM5apIOjIfatUZl3Jmbf1LCXryq9LRl+HzuWA5F3Q9FZdq9sYa0kzU9nZrRfC8Q4YY+t/lbUCN4tx/XsaPnYT8BcJCAYS8BbjQbvJ+AlELUiGoa+tzWGvwFMd0u+iFug4/AJCMuFYwP9ORPBTAT5m671nEAAAAASUVORK5CYII=" alt="Alex Kumar on X"></a>
+                        </li>
+                        <li>
+                            <a class="hover:bg-[#533c72] w-10 h-10 grid place-items-center border border-[#533c72] rounded-full transition duration-100" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALQSURBVHgBjZM9bxNPEMaf2Tvfmx04J/7/JSQkbJBAVAREAQUQ6BBFiOjxpaJM8glIGqRUvAiJCkxaJAShpMDJB0DwDeLQQJwgm8Dd3pt32IuwsWhgpbld7c3zu2fmNIRfq+e8DcKBdzsk62rIFiJ2WO90sMOikG0kbAIkemBsDqCWluB2Ci0Vj/T/l63BdzeQyunts70u4SCEjR8aJpWlz46GlhAqDYJZB3iGDqQiWIC1RvLCk8D8VnnGXe+R9fXWIv6yWuj5fTi+hrR1HFawjgvjSLxAtWj7XwAv0J0Wgnse8iaD57WjqoEkMFELz+Ri8OZPQddpB7onzYhtP2brY5qVVr4gBbPqFOI7mNh4iBgKdMbkqYgK+jgg9V+3kjgNGNRXMPqKRJCbRrNG0dKl7GRjmGeSwoANCA0BpsIRQJ57GlA1blpWvGa5vcaJ9ELDFEnDEem2yelyGx/8Ya6rnRnIIVCLwFNyBDH+k02eCr/Z+7NBtT/XL+5Oxxc79iBf9Cjz3VIpGId4IoeJwonBIwjXftRJcP/PHtki2TaE0tbVyIknUpCWaichYzIaJSs/3kQ1OiZv3q+PQ3wjmXUpRQXZhxEEKXv6rmgsiH47QUU+Z8FNA/Quv/F4xfhqbOafas28nywrhc7R9NL6MNWhhJhZO5lISI31xF1d3SAvW+SqbKiybGUutnhSLpcOyc4k9q+OuytcFCUJNnX9h5L6+Etr9d5DVYoaKGfzfDha0cA5w9k/S/FcZ5izhbbvUoYiKO5eaeu7aR7QWffIRgf/uLr25kLE5oOE7UBo8Youy9ee2nJ3ZuZvYq63/Gzy1V2P4gf6l2+dys6vHUyx3LnchKD7PECVEj3uex5ot6LDY3QrhN0yDqJbhtitsD4T75W3wqR0rRpf79DwC/LzTJ0MNUuKpiEdYMfVooliiDRgArSnIUXsVDSovG6+n3891P4ED4JR/2/C36IAAAAASUVORK5CYII=" alt="Alex Kumar on instagram"></a>
+                        </li>
+                        <li>
+                            <a class="hover:bg-[#533c72] w-10 h-10 grid place-items-center border border-[#533c72] rounded-full transition duration-100" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJSSURBVHgB5VJLTxNRFP7OTB/Td2MAIbzGPYkY1prGxMTXAn+AJu5cSfkFwNLVUF24cGHq2gR2uqP/AMJCYkzsdIMyxDrQaWc67dzrmcYSwTEStnzJnXvuPd/5zpl7DnDpQH8e6sWtIrz4YkckdU9oskVJvS00tGUCHSTRRgKBiEECpoDgWGUHEDvLSJlDjdjQ8Ec3jJ7jLzmSk1DIJfQlcSAGx1BFCgmX3T2QrpIiGUS8v5Re5Tm05ZPKerdfr/hz76Q/+n79p/ZBxzlhwJlfh2dU4MkK3NUTR/fxi3r3QWUTFwQLbvGqh7YyuJm0ZzF9tB1Fdq5uGrvx7a0N1PV/S1KNPwO/4r59psvJY6LJIzOKGr//qTyVPijl1eDrG6W9EimHXiN8ZAOurmDcBk0dS8y0InPLh3syc3OvOq02qyNkr77i3zvLyakeUtxCDWGXdRuilSTkPYoUXNgndGP2jDky639W+fnjJsRpTh4eeoogV8RZsOgBWR9BLhFZIVJ9yLnDJeXOF3t6f2R1rrmwdpZS4DRdCnhSAyipiZqJRAD1Smc2skKiCsZaNfFk90aheW8tilNQ3Wt58uQjTJi/B5tMftkSG38FpMdqZfwHRepcb1PQCO3B2Aghqtykkm+VDMcqzeOckOMbupP8aOTgLmaoXR2UNnR61i1DCCrT8KbPuWzNpMMsYKUB3ukww3YGZGV1XjK08SNDnpOq5Ny75VOCIdxvJV0omGcprlJIRcR0NHkYrBQHFkAHvFtZyIN0Q7Eysv8939D245tkPrVxefELwBf2e8dl4OIAAAAASUVORK5CYII=" alt="Alex Kumar on youtube"></a>
+                        </li>
+                    </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark-800 bg-[url(./assets/footer-bg.png)] bg-cover bg-center bg-no-repeat px-5 py-10 sm:py-20 md:py-30 text-[#FFFFFF99]">
+        <div class="grid gap-6 md:gap-8 justify-items-center">
+        <figure>
+            <img class="w-[220px] md:w-[410px]" src="./assets/techwave-footer-DanTfgeo.png" alt="TechWave Logo">
+        </figure>
+        <ul class="flex flex-wrap max-w-[255px] sm:max-w-full gap-4 sm:gap-8 md:gap-10 justify-center">
+            <li>
+                <a class="flex gap-2 items-center font-medium"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFESURBVHgBpVTRUcMwDHXu+CcbECYgI4QNwgTJCDBBs0G6QdkgMEFhgrQTuExQNhBS83w2wqFO++5ecyerL3qSFWMiIKKc2TIHpiWPEbHGpIKTa+aRzsOeFeaEnpZjNSe2osvRa7GWrkctWhkELT8K6O/AL+YheK+c58wHZhUx+c2819WVJhE0De9VVdlm/DPweY28F1RVMe9QUYg9c2R+Zll2gHCBmOS+S2Cc6YnF2RZPfZUk3kDUaVijko6wks/YLMhf+CjEMqnGPjJL0NmWuAzpg7kTu7DaMRv9VkvLsUG1pYqPJlL+BrYKVOGsVohv6XeLQrzdnCbjp+wmect8Fsvk+7mH5Se0oVf/Ewzuy5LyMXCwNK2pvoM27GNN1+PPcNZ0OTozc886Wo61+Q80TdImCJ2WwKSC/EaEq2kRk7PoNv0AT23Ha1mSx88AAAAASUVORK5CYII=">Spotify</a>
+            </li>
+            <li>
+                <a class="flex gap-2 items-center font-medium"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFySURBVHgBrVWLUYNAEF0yFoAVSAnYQawgsQK0AzqADkIHxArQCk4rIB0cHSRWcO6GtzObA3SivpmXbO52H/vhLkSMEELKrJg+XA/P3IkGGTEf/g4vWjesWTEzmuLEfGG+Mw/MFH5bZjHjL3slhfnsOmYWxjY4+HjYBfbm4jzNLO6jABGvQYc1tySayIdJe2A+MB1+i50zN8xP5itKb9GGZ2aPNdKhWBTI0CMDNy3g3Ia18W/sZiwoEz8ySwRqyWlU4hoPc0Z8IugRpAG92qaaGmstHhpMzBkrWob2ZaPvq9qM26WgVSRwMu/UB2zJRBrvMSBBB3ug+B0Ol7C9ybSfxlcHluO7NaVPehiiJlcQyIzgEwT6SHhRUFCY5gtyI6jZHCG2i4PnhrJHLx/Rozuzl9F4tu9pPM9lHByflFhYTseQJEmDDDsMqzADukT4+epqr/D1cn3JFVXRMrbseEC5GX2Pt3+/YLUUEW3C7/8CahX7AjjY1uMJ1xrTAAAAAElFTkSuQmCC">Apple Podcast</a>
+            </li>
+            <li>
+                <a class="flex gap-2 items-center font-medium"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACySURBVHgBrZThDYIwEIXvGgeoG7CBbuII6gSOoCM4gm7gBoygTgAbwAbnK6mmIOQauC/5gJCXl/Z+HFNERA547aCHRfztoyntiA9mvlNSVspyyt/JxI6LQ+ee7Ni6kRktYZNTuIZHWFMO2lCSXAGval4N/B8gFD+n8o7mMT2m3BPi08OzmoeVkglFJ9iITrUinYbyacMMX2RHV/gmO27dUwyXA3+rpb++hvauFQ3UNFhfH6p8EMifh+m0AAAAAElFTkSuQmCC">YouTube</a>
+            </li>
+            <li>
+                <a class="flex gap-2 items-center font-medium"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAARCAYAAAAyhueAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADfSURBVHgBpZMNDYMwEIULmQAkIAEJSJiEOdgcwBzgYDjYHBQHzEFxgIS3a7huDWPlur7kpX/p19e0p1SEABTkhmywyLaNt16TSzcY34MwdMS2DFv7p7uFKgA8IayZ3Nm0PtSp2UptU2BffWiDId/85AKoXqeoEb6W5lYGpUHJm0ak6eGYhyzLJizXLFSaBtfJub2qdA1fM5T2gs+njpXxWbnXn8hP9Z/azVl+sL0X3k35C2xigBCUt4MfBanteiWB2SLoBEATBDJIQyZ7WEuW/Wm+co+lsuZVqjv5LIW9AKHV8stmhD+CAAAAAElFTkSuQmCC">Twitter</a>
+            </li>
+        </ul>
+        <p>&copy; 2026 TechWave Podcast. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
